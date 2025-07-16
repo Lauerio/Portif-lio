@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geovana Lauer Miranda</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Agrandir&display=swap" rel="stylesheet">
+  <script src="javaScript.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <nav>
+        <ul>
+          <li><a href="#sobre-mim">SOBRE MIM</a></li>
+          <li><a href="#experiencia-section">EXPERIÊNCIA</a></li>
+          <li><a href="#aplicacao-educativa-section">APLICAÇÃO EDUCATIVA</a></li>
+          <li><a href="#contato-section">CONTATOS</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Alternar tema" onclick="trocarCor(this)" class="io">
+        <img src="img/sol.png" alt="Modo Claro">
+      </button>
+    </div>
+  </header>
+
+  <img src="img/gato da foto.png" alt="Gato canto superior" class="cat-top-left balanco">
+  <img src="img/gato da foto2.png" alt="Gato canto inferior" class="cat-bottom-right balanco">
+
+  <main>
+    <section id="boas-vindas">
+      <div class="welcome-content">
+        <div class="text-area">
+          <h1>Geovana Lauer Miranda</h1>
+          <span class="secondary-name">Desenvolvedora Web | Designer Visual</span>
+          <p>
+            Seja muito bem-vindo(a)! Neste espaço, você vai conhecer meus talentos, experiências e interesses. Também preparei uma aplicação educativa interativa para você testar e aprender. Vamos nessa?
+          </p>
+        </div>
+        <div class="image-area">
+          <img src="img/minha-foto.jpeg" alt="Foto de Perfil" class="profile-photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mim">
+      <h2>Sobre mim</h2>
+      <div class="content-wrapper"> 
+        <div class="text-content">
+          <p>
+            Tenho afinidade com design visual. Possuo experiência com ferramentas como Figma e Canva, que utilizo para criar layouts, protótipos e materiais gráficos com foco em estética e usabilidade. Além disso, gosto de desenhar, o que me ajuda a desenvolver a criatividade e o olhar artístico, fundamentais para compor interfaces mais atrativas e intuitivas.
+          </p>
+        </div>
+        <div class="image-gallery">
+          <img src="img/gifdes.gif" alt="Gif" class="gif-img">
+        </div>
+      </div>
+    </section>
+
+<section id="experiencia-section">
+  <h2>Experiência</h2>
+
+  <div class="experiencia-content">
+    <div class="texto-experiencia">
+      <p>Sou Geovana Lauer Miranda, tenho 18 anos e curso Análise e Desenvolvimento de Sistemas no IFRO. Tenho facilidade em aprender, gosto de trabalhar em equipe e sou comunicativa e colaborativa. Leio com frequência, o que fortalece meu pensamento crítico e minha expressão.
+      Tenho experiência com Python, HTML, CSS, JavaScript, Bootstrap, MySQL, JQuery e Flask, estou sempre em busca de aprimorar minhas habilidades técnicas. Sou organizada, proativa e gosto de encontrar soluções criativas, me adaptando bem a novas ferramentas e desafios.</p>
+    </div>
+
+    <div class="wheel-container">
+    <div class="icon-wrapper" style="transform: rotate(0deg) translate(120px);">
+      <img src="img/html.png" class="icon">
+    </div>
+    <div class="icon-wrapper" style="transform: rotate(45deg) translate(120px);">
+      <img src="img/css.png" class="icon">
+    </div>
+    <div class="icon-wrapper" style="transform: rotate(90deg) translate(120px);">
+      <img src="img/javascript.png" class="icon">
+    </div>
+    <div class="icon-wrapper" style="transform: rotate(135deg) translate(120px);">
+      <img src="img/bootstrap.png" class="icon">
+    </div>
+    <div class="icon-wrapper" style="transform: rotate(180deg) translate(120px);">
+      <img src="img/jquery.png" class="icon">
+    </div>
+    <div class="icon-wrapper" style="transform: rotate(225deg) translate(120px);">
+      <img src="img/python.png" class="icon">
+    </div>
+    <div class="icon-wrapper" style="transform: rotate(270deg) translate(120px);">
+      <img src="img/flask.png" class="icon">
+    </div>
+    <div class="icon-wrapper" style="transform: rotate(315deg) translate(120px);">
+      <img src="img/workbench.png" class="icon">
+    </div>
+  </div>
+
+</section>
+
+    <section id="aplicacao-educativa-section">
+      <h2>Aplicação Educativa</h2>
+      <p>Assista à videoaula e experimente a aplicação interativa:</p>
+
+      <!-- Video explicativo -->
+      <div class="video-wrapper">
+        <iframe width="100%" height="550" src="https://www.youtube.com/embed/SEU_VIDEO" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <h2>Agora é a sua vez!</h2>
+
+      <!-- Aplicativo incorporado -->
+      <iframe src="tbfinal/aplicacao.html" width="100%" height="550" class="app-frame" title="Aplicativo Educativo"></iframe>
+
+      <!-- Botão para o site completo -->
+      <a href="tbfinal/aplicacao.html" class="btn" target="_blank">Acessar Aplicação Completa</a>
+    </section>
+
+    <section id="contato-section">
+      <h2>Entre em contato!</h2>
+      <form id="contatoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Número de telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required pattern="[0-9]{10,11}">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <div class="mensagem-wrapper">
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          <img src="img/gato da mensagem.png" alt="Gato espiando" class="gato-mensagem">
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Geovana Lauer Miranda</p>
+  </footer>
+</body>
+</html>
